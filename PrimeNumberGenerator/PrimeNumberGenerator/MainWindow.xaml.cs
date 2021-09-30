@@ -1,6 +1,8 @@
-﻿using System.Text.RegularExpressions;
+﻿using PrimeNumbersGenerator;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Text.RegularExpressions;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 
@@ -11,11 +13,14 @@ namespace PrimeNumberGenerator
 	{
         private readonly string _defaultFirstValueText = "First value";
         private readonly string _defaultLastValueText = "Last value";
+        private Generator _generator;
+        private bool _isButtonLocked;
 
 
         public MainWindow()
 		{
 			InitializeComponent();
+            _generator = new Generator();
 		}
 
         private void TxtFirstValue_GotFocus(object sender, RoutedEventArgs e)
@@ -99,12 +104,49 @@ namespace PrimeNumberGenerator
             }
         }
 
-        private void BtnConfirm_Click(object sender, RoutedEventArgs e)
+        private void tgbParallel_Checked(object sender, RoutedEventArgs e)
         {
-            long firstValue = long.Parse(txtFirstValue.Text);
-            long lastValue = long.Parse(txtLastValue.Text);
-            lsbPrimeNumbers.Items.Add(firstValue);
-            lsbPrimeNumbers.Items.Add(lastValue);
+            tgbParallel.Content = "Par";
+        }
+
+        private void tgbParallel_Unchecked(object sender, RoutedEventArgs e)
+        {
+            tgbParallel.Content = "Seq";
+        }
+
+
+        private async void BtnConfirm_Click(object sender, RoutedEventArgs e)
+        {
+            if (!_isButtonLocked)
+            {
+                Stopwatch stopwatch = Stopwatch.StartNew();
+                _isButtonLocked = true;
+                lsbPrimeNumbers.Items.Clear();
+                lblTimeElapsed.Content = "";
+                spnGenerating.Visibility = Visibility.Visible;
+
+                long firstValue = long.Parse(txtFirstValue.Text);
+                long lastValue = long.Parse(txtLastValue.Text);
+                List<long> primeNumbers = new List<long>();
+                if ((bool)tgbParallel.IsChecked)
+                {
+                    primeNumbers = await _generator.GetPrimesParallel(firstValue, lastValue);
+                    primeNumbers.Sort();
+                }
+                else
+                {
+                    primeNumbers = await _generator.GetPrimesSequential(firstValue, lastValue);
+                }
+                for (int i = 0; i < primeNumbers.Count; i++)
+                {
+                    lsbPrimeNumbers.Items.Add(primeNumbers[i]);
+                }
+
+                stopwatch.Stop();
+                spnGenerating.Visibility = Visibility.Collapsed;
+                lblTimeElapsed.Content = $"Time Elapsed: {stopwatch.ElapsedMilliseconds / 1000.0f} seconds";
+                _isButtonLocked = false;
+            }
         }
     }
 }

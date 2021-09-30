@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:fa="http://schemas.fontawesome.io/icons/"
         xmlns:local="clr-namespace:PrimeNumberGenerator"
         mc:Ignorable="d"
         Title="PrimeGenerator" Height="450" Width="800">
@@ -12,7 +13,9 @@
 		<TextBox x:Name="txtLastValue" Text="Last value" VerticalContentAlignment="Center" Margin="454,190,110,177" Background="White" Foreground="#FF7E7E7E" TextAlignment="Center" SelectionBrush="#FF1D9BF3" BorderBrush="#FF2D2D2D" FontFamily="Montserrat" FontSize="16" GotFocus="TxtLastValue_GotFocus" LostFocus="TxtLastValue_LostFocus" KeyDown="TxtLastValue_KeyDown" PreviewTextInput="TxtLastValue_PreviewTextInput" PreviewKeyDown="TxtLastValue_PreviewKeyDown" Style="{DynamicResource TextBoxNin}" />
 		<Button x:Name="btnConfirm" Content="Confirm" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="454,339,110,0" VerticalAlignment="Top" Width="230" Background="#FF1D9BF3" BorderBrush="#00000000" Foreground="White" Height="51" FontFamily="Montserrat" FontSize="14" Click="BtnConfirm_Click" Style="{DynamicResource ButtonNinBig}"/>
 		<ListBox x:Name="lsbPrimeNumbers" Margin="101,110,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="324" Height="280">
-
 		</ListBox>
+		<ToggleButton x:Name="tgbParallel" Content="Seq" Checked = "tgbParallel_Checked" Unchecked = "tgbParallel_Unchecked" Margin = "706,345,51,37"  Width = "35" Height="35" HorizontalAlignment = "Center" />
+		<fa:ImageAwesome x:Name="spnGenerating" Visibility="Collapsed" Icon="Refresh" Spin="True" Margin="516,285,159,104" />
+		<Label  x:Name="lblTimeElapsed" Content="" HorizontalAlignment="Left" Margin="454,300,0,0" VerticalAlignment="Top" Foreground="#000" FontSize="20" FontFamily="Montserrat Medium" RenderTransformOrigin="0.51,1.483"/>
 	</Grid>
 </Window>

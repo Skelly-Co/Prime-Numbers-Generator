@@ -13,3 +13,6 @@ C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberG
 C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.csproj.CoreCompileInputs.cache
 C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.exe
 C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.pdb
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\bin\Debug\FontAwesome.WPF.dll
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\bin\Debug\FontAwesome.WPF.xml
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.csproj.CopyComplete
