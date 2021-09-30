@@ -1,27 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace PrimeNumberGenerator
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
 	public partial class MainWindow : Window
 	{
         private readonly string _defaultFirstValueText = "First value";
         private readonly string _defaultLastValueText = "Last value";
+
 
         public MainWindow()
 		{
@@ -80,21 +70,17 @@ namespace PrimeNumberGenerator
             }
         }
 
-        private void TxtLastValue_TextChanged(object sender, TextChangedEventArgs e)
+        private void TxtFirstValue_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            TextBoxToProperCase(txtLastValue);
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
-        private void TextBoxToProperCase(TextBox textBox)
+             
+
+        private void TxtLastValue_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            if (!textBox.Text.Equals(""))
-            {
-                char[] v = textBox.Text.ToCharArray();
-                string s = v[0].ToString().ToUpper();
-                for (int b = 1; b < v.Length; b++)
-                    s += v[b].ToString().ToLower();
-                textBox.Text = s;
-                textBox.Select(textBox.Text.Length, 0);
-            }
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
 
         private void TxtFirstValue_PreviewKeyDown(object sender, KeyEventArgs e)
@@ -113,10 +99,12 @@ namespace PrimeNumberGenerator
             }
         }
 
-
         private void BtnConfirm_Click(object sender, RoutedEventArgs e)
         {
-            lsbPrimeNumbers.Items.Add(1);
+            long firstValue = long.Parse(txtFirstValue.Text);
+            long lastValue = long.Parse(txtLastValue.Text);
+            lsbPrimeNumbers.Items.Add(firstValue);
+            lsbPrimeNumbers.Items.Add(lastValue);
         }
     }
 }
