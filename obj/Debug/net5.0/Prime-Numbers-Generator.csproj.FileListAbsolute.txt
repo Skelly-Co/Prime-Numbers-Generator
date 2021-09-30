@@ -1,0 +1,15 @@
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/bin/Debug/net5.0/Prime-Numbers-Generator.deps.json
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/bin/Debug/net5.0/Prime-Numbers-Generator.runtimeconfig.json
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/bin/Debug/net5.0/Prime-Numbers-Generator.runtimeconfig.dev.json
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/bin/Debug/net5.0/Prime-Numbers-Generator.dll
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/bin/Debug/net5.0/ref/Prime-Numbers-Generator.dll
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/bin/Debug/net5.0/Prime-Numbers-Generator.pdb
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/obj/Debug/net5.0/Prime-Numbers-Generator.csprojAssemblyReference.cache
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/obj/Debug/net5.0/Prime-Numbers-Generator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/obj/Debug/net5.0/Prime-Numbers-Generator.AssemblyInfoInputs.cache
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/obj/Debug/net5.0/Prime-Numbers-Generator.AssemblyInfo.cs
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/obj/Debug/net5.0/Prime-Numbers-Generator.csproj.CoreCompileInputs.cache
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/obj/Debug/net5.0/Prime-Numbers-Generator.dll
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/obj/Debug/net5.0/ref/Prime-Numbers-Generator.dll
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/obj/Debug/net5.0/Prime-Numbers-Generator.pdb
+/Users/schemabuoi/Developer/Assignments/Prime-Numbers-Generator/obj/Debug/net5.0/Prime-Numbers-Generator.genruntimeconfig.cache
