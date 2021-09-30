@@ -1,0 +1,15 @@
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\bin\Debug\PrimeNumberGenerator.exe.config
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\bin\Debug\PrimeNumberGenerator.exe
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\bin\Debug\PrimeNumberGenerator.pdb
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.csproj.AssemblyReference.cache
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\MainWindow.g.cs
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\App.g.cs
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator_MarkupCompile.cache
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator_MarkupCompile.lref
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\MainWindow.baml
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.g.resources
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.Properties.Resources.resources
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.csproj.GenerateResource.cache
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.exe
+C:\Users\David\Desktop\Prime-Numbers-Generator\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.pdb
